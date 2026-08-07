@@ -1,0 +1,33 @@
+name: Update Training Day Counter
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Compute day count and update README
+        run: |
+          START_DATE="2026-07-20"
+          TODAY=$(date -u +%Y-%m-%d)
+          DAYS=$(( ( $(date -u -d "$TODAY" +%s) - $(date -u -d "$START_DATE" +%s) ) / 86400 + 1 ))
+          DAY_STR=$(printf "%03d" "$DAYS")
+          sed -i "s/<!--DAY_COUNT-->.*<!--\/DAY_COUNT-->/<!--DAY_COUNT-->${DAY_STR}<!--\/DAY_COUNT-->/" README.md
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if ! git diff --quiet README.md; then
+            git add README.md
+            git commit -m "chore: update training day counter"
+            git push
+          fi
