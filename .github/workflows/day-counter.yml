@@ -19,8 +19,7 @@ jobs:
           START_DATE="2026-07-20"
           TODAY=$(date -u +%Y-%m-%d)
           DAYS=$(( ( $(date -u -d "$TODAY" +%s) - $(date -u -d "$START_DATE" +%s) ) / 86400 + 1 ))
-          DAY_STR=$(printf "%03d" "$DAYS")
-          sed -i "s/<!--DAY_COUNT-->.*<!--\/DAY_COUNT-->/<!--DAY_COUNT-->${DAY_STR}<!--\/DAY_COUNT-->/" README.md
+          sed -i "s/<!--DAY_COUNT-->.*<!--\/DAY_COUNT-->/<!--DAY_COUNT-->${DAYS}<!--\/DAY_COUNT-->/" README.md
 
       - name: Commit and push if changed
         run: |

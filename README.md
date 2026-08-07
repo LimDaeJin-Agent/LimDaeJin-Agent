@@ -4,8 +4,6 @@ AI 직무 전환을 목표로 공부하며, n8n 워크플로우 자동화와 프
 
 ---
 
-**AI Agent Enginner Study <!--DAY_COUNT-->019<!--/DAY_COUNT-->일** (2026-07-20~)
-
 ## 📋 프로젝트 전체 요약
 
 각 프로젝트를 클릭하면 해당 저장소의 상세 README로 이동합니다 (구조·기능·설계 근거까지 자세히 정리되어 있습니다).
@@ -21,5 +19,7 @@ AI 직무 전환을 목표로 공부하며, n8n 워크플로우 자동화와 프
 | 7 | [TIL](https://github.com/LimDaeJin-Agent/TIL/blob/master/README.md) | 2026-07-22 | 2026-07-22 | Markdown | Today I Learned — 매일 배운 내용 정리 | — |
 
 ---
+
+**AI Agent Enginner Study <!--DAY_COUNT-->19<!--/DAY_COUNT-->일** (2026-07-20~)
 
 <sub>이 README는 GitHub 프로필 메인 화면에 표시되는 소개 페이지입니다. 프로젝트별 상세 설명은 각 저장소의 README.md를 확인해주세요.</sub>
