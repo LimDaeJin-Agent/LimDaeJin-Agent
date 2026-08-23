@@ -21,6 +21,6 @@ AI 직무 전환을 목표로 공부하며, n8n 워크플로우 자동화와 프
 
 ---
 
-**AI Agent Enginner Study <!--DAY_COUNT-->34<!--/DAY_COUNT-->일** (2026-07-20~)
+**AI Agent Enginner Study <!--DAY_COUNT-->35<!--/DAY_COUNT-->일** (2026-07-20~)
 
 <sub>이 README는 GitHub 프로필 메인 화면에 표시되는 소개 페이지입니다. 프로젝트별 상세 설명은 각 저장소의 README.md를 확인해주세요.</sub>
